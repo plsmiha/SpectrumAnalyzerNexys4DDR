@@ -1,0 +1,9 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pewfo/Desktop/universita/STO STUDIANDO QUESTE/reti logiche/MUSICA LED E COSE BELLE/MY part/completoPROVE/completoPROVE.sim/sim_1/synth/func/xsim/tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ImgCtrl'
+INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0_clk_wiz_0_clk_wiz'
+INFO: [VRFC 10-3107] analyzing entity 'mic'
+INFO: [VRFC 10-3107] analyzing entity 'VGA'
+INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0'
+INFO: [VRFC 10-3107] analyzing entity 'progettoRL'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pewfo/Desktop/universita/STO STUDIANDO QUESTE/reti logiche/MUSICA LED E COSE BELLE/MY part/completoPROVE/completoPROVE.srcs/sim_1/new/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb'

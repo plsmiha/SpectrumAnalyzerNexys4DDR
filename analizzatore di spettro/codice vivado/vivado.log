@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 15 19:58:29 2022
+# Process ID: 14440
+# Current directory: C:/Users/pewfo/Desktop/analizzatore di spettro/codice vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9512 C:\Users\pewfo\Desktop\analizzatore di spettro\codice vivado\oraLavoroSuQuesto.xpr
+# Log file: C:/Users/pewfo/Desktop/analizzatore di spettro/codice vivado/vivado.log
+# Journal file: C:/Users/pewfo/Desktop/analizzatore di spettro/codice vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/pewfo/Desktop/analizzatore di spettro/codice vivado/oraLavoroSuQuesto.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/Documents/Uni/Reti_Logiche/vivado/fourierCoreFixed/final/31-03/completo' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:12 . Memory (MB): peak = 1010.090 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 15 20:46:14 2022...

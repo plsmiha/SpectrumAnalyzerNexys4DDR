@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 20 15:42:43 2021
+# Process ID: 4320
+# Current directory: C:/Users/pewfo/Desktop/universita/STO STUDIANDO QUESTE/reti logiche/MUSICA LED E COSE BELLE/MY part/completoPROVE/completoPROVE.sim/sim_1/impl/timing/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/pewfo/Desktop/universita/STO STUDIANDO QUESTE/reti logiche/MUSICA LED E COSE BELLE/MY part/completoPROVE/completoPROVE.sim/sim_1/impl/timing/xsim/xsim.dir/tb_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/pewfo/Desktop/universita/STO STUDIANDO QUESTE/reti logiche/MUSICA LED E COSE BELLE/MY part/completoPROVE/completoPROVE.sim/sim_1/impl/timing/xsim/webtalk.log
+# Journal file: C:/Users/pewfo/Desktop/universita/STO STUDIANDO QUESTE/reti logiche/MUSICA LED E COSE BELLE/MY part/completoPROVE/completoPROVE.sim/sim_1/impl/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/pewfo/Desktop/universita/STO -notrace

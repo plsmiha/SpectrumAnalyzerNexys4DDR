@@ -1,0 +1,204 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Apr 20 12:24:09 2022
+| Host         : THB running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file progettoRL_control_sets_placed.rpt
+| Design       : progettoRL
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   126 |
+|    Minimum number of control sets                        |   126 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   317 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   126 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |    37 |
+| >= 8 to < 10       |    17 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    67 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            2529 |         1015 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            1096 |          336 |
+| Yes          | No                    | No                     |            1068 |          495 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              70 |           16 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+----------------+--------------+
+|        Clock Signal       |                             Enable Signal                             |                               Set/Reset Signal                              | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+----------------+--------------+
+|  M_CLK_OBUF_BUFG          |                                                                       |                                                                             |                1 |              1 |         1.00 |
+|  clkGen/inst/clk_6_144MHz |                                                                       |                                                                             |                2 |              3 |         1.50 |
+|  clkGen/inst/clk_25MHz    |                                                                       | video/Inst_ImgCtrl/red[3]_i_1_n_0                                           |                1 |              4 |         4.00 |
+|  M_CLK_OBUF_BUFG          | M_DATA_IBUF                                                           | audio/CEA2                                                                  |                2 |              6 |         3.00 |
+|  led_control/clk          |                                                                       |                                                                             |                4 |              7 |         1.75 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[22]_41                             |                                                                             |                6 |              7 |         1.17 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[23]_29                             |                                                                             |                4 |              7 |         1.75 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[20]_42                             |                                                                             |                5 |              7 |         1.40 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[12]_22                             |                                                                             |                2 |              7 |         3.50 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[10]_45                             |                                                                             |                5 |              7 |         1.40 |
+|  M_CLK_OBUF_BUFG          | audio/data_valid_reg_0                                                |                                                                             |                3 |              7 |         2.33 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[13]_21                             |                                                                             |                5 |              7 |         1.40 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[5]_36                              |                                                                             |                5 |              7 |         1.40 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[19]_31                             |                                                                             |                6 |              7 |         1.17 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[18]_43                             |                                                                             |                4 |              7 |         1.75 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[17]_32                             |                                                                             |                5 |              7 |         1.40 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[16]_44                             |                                                                             |                7 |              7 |         1.00 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[9]_34                              |                                                                             |                3 |              7 |         2.33 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[15]_25                             |                                                                             |                4 |              7 |         1.75 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[14]_26                             |                                                                             |                4 |              7 |         1.75 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[11]_33                             |                                                                             |                6 |              7 |         1.17 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[0]_50                              |                                                                             |                4 |              7 |         1.75 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[25]_28                             |                                                                             |                6 |              7 |         1.17 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[30]_24                             |                                                                             |                6 |              7 |         1.17 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[27]_27                             |                                                                             |                4 |              7 |         1.75 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[2]_49                              |                                                                             |                3 |              7 |         2.33 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[3]_37                              |                                                                             |                4 |              7 |         1.75 |
+|  clkGen/inst/clk_25MHz    |                                                                       |                                                                             |                6 |              7 |         1.17 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[26]_39                             |                                                                             |                7 |              7 |         1.00 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[28]_20                             |                                                                             |                4 |              7 |         1.75 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | led_control/bit_demultiplier[6]_i_1_n_0                                     |                3 |              7 |         2.33 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[31]_23                             |                                                                             |                5 |              7 |         1.40 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[6]_47                              |                                                                             |                4 |              7 |         1.75 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[29]_19                             |                                                                             |                4 |              7 |         1.75 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[21]_30                             |                                                                             |                7 |              7 |         1.00 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[1]_38                              |                                                                             |                3 |              7 |         2.33 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[24]_40                             |                                                                             |                5 |              7 |         1.40 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[8]_46                              |                                                                             |                4 |              7 |         1.75 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[4]_48                              |                                                                             |                2 |              7 |         3.50 |
+|  weaTime_BUFG             | fftBlock/FFT_module/realSignal_reg[7]_35                              |                                                                             |                4 |              7 |         1.75 |
+|  led_control/clk          |                                                                       | led_control/bit_counter                                                     |                3 |              8 |         2.67 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | led_control/test_map/eqOp                                                   |                3 |              8 |         2.67 |
+|  clkGen/inst/clk_25MHz    |                                                                       | video/Inst_ImgCtrl/green[0]_i_1_n_0                                         |                4 |              8 |         2.00 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[11].modulo/sqroot2/Q[15]                        |                4 |              9 |         2.25 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[15].modulo/sqroot2/Q[15]                        |                3 |              9 |         3.00 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[14].modulo/sqroot2/Q[15]                        |                4 |              9 |         2.25 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[9].modulo/sqroot2/Q[15]                         |                5 |              9 |         1.80 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[13].modulo/sqroot2/Q[15]                        |                4 |              9 |         2.25 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[4].modulo/sqroot2/Q[15]                         |                4 |              9 |         2.25 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[31].modulo/sqroot2/Q[15]                        |                6 |              9 |         1.50 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[3].modulo/sqroot2/Q[15]                         |                6 |              9 |         1.50 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[12].modulo/sqroot2/Q[15]                        |                4 |              9 |         2.25 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[29].modulo/sqroot2/Q[15]                        |                5 |              9 |         1.80 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[5].modulo/sqroot2/Q[9]                          |                6 |              9 |         1.50 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[6].modulo/sqroot2/Q[9]                          |                6 |              9 |         1.50 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[10].modulo/sqroot2/Q[15]                        |                5 |              9 |         1.80 |
+|  fftReady                 |                                                                       | fftBlock/FFT_module/gen_mod[30].modulo/sqroot2/Q[9]                         |                6 |              9 |         1.50 |
+|  M_CLK_OBUF_BUFG          | fftBlock/intAddraTime[10]_i_1_n_0                                     |                                                                             |                5 |             11 |         2.20 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[0].modulo/sqroot2/E[0]                    |                                                                             |                9 |             13 |         1.44 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[9].modulo/sqroot2/done                    |                                                                             |                5 |             16 |         3.20 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[14].modulo/sqroot2/done                   |                                                                             |                5 |             16 |         3.20 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[15].modulo/sqroot2/done                   |                                                                             |                6 |             16 |         2.67 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[16].modulo/sqroot2/done                   |                                                                             |                4 |             16 |         4.00 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[27].modulo/sqroot2/sq_root[15]_i_1__5_n_0 |                                                                             |                6 |             16 |         2.67 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[18].modulo/sqroot2/sq_root[15]_i_1__6_n_0 |                                                                             |                8 |             16 |         2.00 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[19].modulo/sqroot2/sq_root[15]_i_1__3_n_0 |                                                                             |                7 |             16 |         2.29 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[0].modulo/sqroot2/sq_root[15]_i_1__10_n_0 |                                                                             |                5 |             16 |         3.20 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[1].modulo/sqroot2/done                    |                                                                             |                8 |             16 |         2.00 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[17].modulo/sqroot2/sq_root[15]_i_1__7_n_0 |                                                                             |                6 |             16 |         2.67 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[20].modulo/sqroot2/sq_root[15]_i_1__2_n_0 |                                                                             |                6 |             16 |         2.67 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[7].modulo/sqroot2/done                    |                                                                             |                4 |             16 |         4.00 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[8].modulo/sqroot2/done                    |                                                                             |                8 |             16 |         2.00 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[10].modulo/sqroot2/done                   |                                                                             |                6 |             16 |         2.67 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[11].modulo/sqroot2/done                   |                                                                             |                6 |             16 |         2.67 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[21].modulo/sqroot2/sq_root[15]_i_1__1_n_0 |                                                                             |                5 |             16 |         3.20 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[6].modulo/sqroot2/done                    |                                                                             |                8 |             16 |         2.00 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[22].modulo/sqroot2/sq_root[15]_i_1__0_n_0 |                                                                             |                7 |             16 |         2.29 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[23].modulo/sqroot2/sq_root[15]_i_1_n_0    |                                                                             |                5 |             16 |         3.20 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[24].modulo/sqroot2/sq_root[15]_i_1__9_n_0 |                                                                             |                5 |             16 |         3.20 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[25].modulo/sqroot2/done                   |                                                                             |                6 |             16 |         2.67 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[26].modulo/sqroot2/sq_root[15]_i_1__4_n_0 |                                                                             |                5 |             16 |         3.20 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[28].modulo/sqroot2/sq_root[15]_i_1__8_n_0 |                                                                             |                8 |             16 |         2.00 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[12].modulo/sqroot2/done                   |                                                                             |                5 |             16 |         3.20 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[29].modulo/sqroot2/done                   |                                                                             |                9 |             16 |         1.78 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[2].modulo/sqroot2/done                    |                                                                             |                5 |             16 |         3.20 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[30].modulo/sqroot2/done                   |                                                                             |                7 |             16 |         2.29 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[31].modulo/sqroot2/done                   |                                                                             |                5 |             16 |         3.20 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[3].modulo/sqroot2/done                    |                                                                             |                5 |             16 |         3.20 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[4].modulo/sqroot2/done                    |                                                                             |                7 |             16 |         2.29 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[5].modulo/sqroot2/done                    |                                                                             |                5 |             16 |         3.20 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[13].modulo/sqroot2/done                   |                                                                             |                6 |             16 |         2.67 |
+|  clkGen/inst/clk_6_144MHz |                                                                       | audio/clk_3_072MHz                                                          |                8 |             30 |         3.75 |
+|  clkGen/inst/clk_25MHz    |                                                                       | video/cntH[31]_i_1_n_0                                                      |                8 |             31 |         3.88 |
+|  ck100MHz_IBUF_BUFG       | fftBlock/FFT_module/gen_mod[0].modulo/sqroot2/done_reg_3              | fftBlock/FFT_module/gen_mod[0].modulo/sqroot2/done_reg_1                    |                6 |             32 |         5.33 |
+|  weaTime_BUFG             |                                                                       | fftBlock/FFT_module/clear                                                   |                8 |             32 |         4.00 |
+|  M_CLK_OBUF_BUFG          |                                                                       | fftBlock/contatore_reg[0]_i_1_n_0                                           |                8 |             32 |         4.00 |
+|  M_CLK_OBUF_BUFG          |                                                                       | audio/clear                                                                 |                8 |             32 |         4.00 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/contatoreF[0]_i_1_n_0                                              |                8 |             32 |         4.00 |
+|  clkGen/inst/clk_25MHz    | video/cntV                                                            | video/cntV0                                                                 |                8 |             32 |         4.00 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[0].modulo/sqroot2/SQROOT_PROC.r[17]_i_1__10_n_0 |                9 |             33 |         3.67 |
+|  M_CLK_OBUF_BUFG          | audio/sel                                                             |                                                                             |                9 |             33 |         3.67 |
+|  M_CLK_OBUF_BUFG          |                                                                       | audio/CEA2                                                                  |                9 |             33 |         3.67 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[7].modulo/sqroot2/done                          |               10 |             34 |         3.40 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[1].modulo/sqroot2/done                          |                8 |             34 |         4.25 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[16].modulo/sqroot2/done                         |               10 |             34 |         3.40 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[15].modulo/sqroot2/done                         |               11 |             34 |         3.09 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[14].modulo/sqroot2/done                         |                7 |             34 |         4.86 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[9].modulo/sqroot2/done                          |                9 |             34 |         3.78 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[10].modulo/sqroot2/done                         |                9 |             34 |         3.78 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[11].modulo/sqroot2/done                         |               12 |             34 |         2.83 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[5].modulo/sqroot2/done                          |               10 |             34 |         3.40 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[4].modulo/sqroot2/done                          |               11 |             34 |         3.09 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[3].modulo/sqroot2/done                          |                8 |             34 |         4.25 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[31].modulo/sqroot2/done                         |               10 |             34 |         3.40 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[30].modulo/sqroot2/done                         |               10 |             34 |         3.40 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[2].modulo/sqroot2/done                          |                8 |             34 |         4.25 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[29].modulo/sqroot2/done                         |               10 |             34 |         3.40 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[12].modulo/sqroot2/done                         |                8 |             34 |         4.25 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[25].modulo/sqroot2/done                         |               10 |             34 |         3.40 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[8].modulo/sqroot2/done                          |               10 |             34 |         3.40 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[6].modulo/sqroot2/done                          |               10 |             34 |         3.40 |
+|  ck100MHz_IBUF_BUFG       |                                                                       | fftBlock/FFT_module/gen_mod[13].modulo/sqroot2/done                         |                7 |             34 |         4.86 |
+|  M_CLK_OBUF_BUFG          | audio/CEA2                                                            |                                                                             |                7 |             39 |         5.57 |
+|  fftReady                 |                                                                       |                                                                             |               63 |            162 |         2.57 |
+|  weaTime_BUFG             | fftBlock/FFT_module/clear                                             |                                                                             |              122 |            229 |         1.88 |
+|  ck100MHz_IBUF_BUFG       |                                                                       |                                                                             |              939 |           2349 |         2.50 |
++---------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+----------------+--------------+
+
+
